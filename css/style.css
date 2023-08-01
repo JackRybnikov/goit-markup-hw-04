@@ -239,7 +239,7 @@ ul {
 
 .footer-icon {
   display: flex;
-  gap: 24px;
+  gap: 16px;
 }
 
 .footer-icon-link {
@@ -260,8 +260,6 @@ ul {
 
 .footer-list-icon {
   fill: var(--cloud-color);
-  width: 24px;
-  height: 24px;
 }
 
 /* Style for index page */
