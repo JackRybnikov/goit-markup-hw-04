@@ -336,6 +336,10 @@ ul {
 
 /* 2 section index */
 
+.index-two-comtainer {
+  
+}
+
 .index-our-strength {
   padding: 120px 0;
 }
@@ -362,6 +366,11 @@ ul {
   border: 0;
   padding: 24px 100px;
   background-color: var(--cloud-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
 }
 
 .index-our-strength-list-title {
