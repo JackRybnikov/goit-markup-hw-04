@@ -191,16 +191,17 @@ ul {
   padding: 100px 0;
 }
 
-.footer-list {
+.footet-container {
   display: flex;
+  align-items: baseline;
+  justify-content: center;
+
   gap: 120px;
 }
 
-.footet-container {
+.footer-logo-text {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 120px;
+  margin-right: 120px
 }
 
 .logo-footer {
