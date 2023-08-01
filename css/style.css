@@ -489,11 +489,7 @@ ul {
   background-color: var(--ocean-color);
 }
 
-.index-four-list-icon {
-  width: 16px;
-  height: 16px;
-  fill: var(--cloud-color);
-}
+.index-four-list-icon {}
 
 /* 5 section of index */
 
