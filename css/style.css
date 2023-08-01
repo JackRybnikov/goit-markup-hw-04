@@ -25,8 +25,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-
-  max-width: 1440px;
 }
 
 img {
@@ -270,10 +268,15 @@ ul {
   height: 24px;
 }
 
+/* Main */
+
+.main {
+  max-width: 1440px;
+}
+
 /* Style for index page */
 
 .index-order-services {
-  
   padding: 188px 0;
   background-color: var(--navy-color);
   background-image: linear-gradient(
