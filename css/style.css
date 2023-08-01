@@ -64,6 +64,12 @@ ul {
   padding: 0 15px;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -197,7 +203,7 @@ ul {
 }
 
 .footer-logo-text {
-  margin-right: 120px
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -484,7 +490,8 @@ ul {
   background-color: var(--ocean-color);
 }
 
-.index-four-list-icon {}
+.index-four-list-icon {
+}
 
 /* 5 section of index */
 
@@ -530,7 +537,8 @@ ul {
   border: 1px solid var(--light-slate-color);
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .index-five-list-icon {
@@ -552,10 +560,10 @@ ul {
   width: 100%;
   height: 100%;
 
-  background-image: linear-gradient(
-    rgba(46, 47, 66, 0.4),
-    rgba(46, 47, 66, 0.4)
-  );
+  background-color: var(--navy-blue-modal-color);
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -567,7 +575,12 @@ ul {
   min-height: 584px;
   border-radius: 4px;
 
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
   background-color: var(--dairy-color);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close {
@@ -579,7 +592,13 @@ ul {
   right: 24px;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 100%;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
 
   background: transparent;
   cursor: pointer;
@@ -587,7 +606,8 @@ ul {
   background-color: var(--cornflower-color);
   fill: var(--navy-blue-modal-color);
 
-  transition: background-color fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:active,
@@ -595,12 +615,11 @@ ul {
 .button-close:focus {
   background-color: var(--ocean-color);
   fill: var(--white-color);
-  border-color: var(--ocean-color);
+  border: none;
 }
 
 .modal-icon {
-  width: 8px;
-  height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Style for portfolio page */
