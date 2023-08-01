@@ -494,7 +494,7 @@ ul {
 /* 5 section of index */
 
 .index-five {
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .index-five-title {
@@ -504,6 +504,8 @@ ul {
   line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
+  line-height: 1.11;
+  color: var(--navy-color);
 
   margin-bottom: 72px;
 }
@@ -515,16 +517,33 @@ ul {
   align-items: center;
 }
 
-.index-five-list-icon {
-  width: 168px;
+.index-five-list-el {
   height: 88px;
-  fill: var(--light-slate-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: calc((100% - 120px) / 6);
 }
 
-.index-five-list-icon:hover,
-.index-five-list-icon:focus {
-  fill: var(--ocean-color);
+.index-five-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  color: var(--light-slate-color);
+
+  border: 1px solid var(--light-slate-color);
+  border-radius: 4px;
+
+  transition: color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.index-five-list-icon {
+  fill: currentColor;
+}
+
+.index-five-link:hover,
+.index-five-link:focus {
+  border-color: var(--ocean-color);
+  color: var(--ocean-color);
 }
 
 /* Modal */
