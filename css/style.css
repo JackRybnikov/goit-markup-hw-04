@@ -682,9 +682,12 @@ ul {
   column-gap: 24px;
 }
 
+.portfolio-list-el {
+  width: calc((100% - 48px) / 3);
+}
+
 .portfolio-list-items-item {
   display: block;
-  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-items-item:hover,
