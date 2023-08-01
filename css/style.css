@@ -191,16 +191,12 @@ ul {
   padding: 100px 0;
 }
 
-.footet-container {
+.footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: center;
-
-  gap: 120px;
 }
 
 .footer-logo-text {
-  display: flex;
   margin-right: 120px
 }
 
