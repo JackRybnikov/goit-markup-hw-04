@@ -76,7 +76,7 @@
           <h1 class="index-order-services-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="index-order-services-button data-modal-open">
+          <button data-modal-open class="index-order-services-button">
             Order Service
           </button>
         </div>
@@ -605,16 +605,16 @@
       </div>
     </footer>
 
-    <script src="./js/modal.js">
-      <div class="backdrop">
-        <div class="modal">
-          <button type="button" class="data-modal-close">
-            <svg class="modal-icon icon">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+    <div data-modal class="backdrop">
+      <div class="modal">
+        <button type="button" data-modal-close>
+          <svg class="modal-icon icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
-    </script>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
